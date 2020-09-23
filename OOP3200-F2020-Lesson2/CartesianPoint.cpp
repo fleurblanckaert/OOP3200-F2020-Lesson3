@@ -49,6 +49,8 @@ CartesianPoint CartesianPoint::operator = (const CartesianPoint & new_point)
 {
 	SetX(new_point.GetX());
 	SetY(new_point.GetY());
+
+	return new_point;
 }
 
 std::ostream& operator<<(std::ostream& out, const CartesianPoint point)
