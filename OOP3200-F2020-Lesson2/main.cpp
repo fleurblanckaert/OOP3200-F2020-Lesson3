@@ -72,7 +72,7 @@ int main()
 		std::cout << "\nEnter another point: ";
 		std::cin >> anotherPoint;
 
-		std::cout << "You entered: " << anotherPoint;
+		std::cout << "You entered: " << anotherPoint << std::endl;
 	}
 
 	catch (exception& ex)
