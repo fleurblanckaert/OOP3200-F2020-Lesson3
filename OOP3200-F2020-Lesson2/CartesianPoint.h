@@ -24,6 +24,10 @@ public:
 	double operator-(const CartesianPoint& point_to) const;
 	bool operator==(const CartesianPoint& other_point) const;
 
+	/*Friend Overloads*/
+	friend std::ostream& operator<<(std::ostream& out, const CartesianPoint point);
+	friend std::istream& operator>>(std::istream& in, CartesianPoint& point);
+
 
 	// get x
 	int GetX() const;
@@ -56,8 +60,8 @@ public:
 
 private:
 	// private data members for the dimensions of the point
-	int myX; // x-axis (horizontal) value
-	int myY;  // y-axis (vertical) value
+	int m_x; // x-axis (horizontal) value
+	int m_y;  // y-axis (vertical) value
 
 };
 
